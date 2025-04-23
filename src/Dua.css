@@ -1,0 +1,85 @@
+body {
+    /* margin: 0; */
+    /* display: flex
+; */
+    /* place-items: center; */
+    /* min-width: 320px; */
+    /* min-height: 100vh; */
+}
+ul {
+    list-style: none;
+    /* background-color: #f9f9f9; */
+    padding: 15px;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    margin: 0px 0px 70px 0px;
+}
+
+/* Improved styles for each li element (the children) */
+li {
+    background-color: #ffffff; /* Sets a white background */
+    padding: 15px; /* Adds more internal spacing */
+    border-radius: 8px; /* Rounds the corners more */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Enhances the shadow */
+    margin-bottom: 10px; /* Adds more spacing between the cards */
+    display: block; /* Ensures the list item is a block element */
+    font-family: 'Arial', sans-serif; /* Sets a clean font */
+    font-size: 1.1em; /* Increases font size for readability */
+    color: #333; /* Sets a dark gray text color */
+}
+
+/* Styles for the search bar */
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: #5DB996;
+    box-shadow: 0 0 5px rgba(93, 185, 150, 0.5);
+}
+
+/* Styles for the /dua page */
+.dua-page {
+    margin: 0 auto;
+    max-width: 600px; /* Center the content and limit the width */
+}
+
+.dua-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 10px;
+}
+
+.dua-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1em;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dua-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dua-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}

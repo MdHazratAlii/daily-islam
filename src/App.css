@@ -1,0 +1,256 @@
+body {
+  font-family: 'SolaimanLipi', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.popup-content ul{
+  margin: 0px;
+}
+
+#root {
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 0px;
+}
+
+.top-bar {
+  background-color: #004d40;
+  color: #fff;
+  text-align: center;
+  padding: 30px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar p {
+  margin: 0;
+}
+.welcome-message {
+  font-size: 1em;
+  margin: 0;
+  font-weight: 600;
+}
+
+.top-bar .clock {
+  font-size: 2.5em;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.summary {
+  text-align: center;
+  margin: 20px 12px;
+}
+
+.summary h2 {
+  color: #004d40;
+}
+
+.salat-times {
+  margin: 20px 12px 100px 12px;
+}
+
+.salat-times h2 {
+  margin-bottom: 20px;
+}
+
+.salat-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.salat-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 140px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.salat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.salat-card.selected {
+  background-color: #e8f5e9;
+  border-color: #004d40;
+}
+
+.salat-card h3 {
+  margin: 0;
+  color: #004d40;
+}
+
+.salat-card p {
+  margin: 5px 0 0;
+  font-size: 1.1em;
+}
+
+.prayer-rules-button{
+  background: #004d40;
+  padding: 12px 20px 12px 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #004d40;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.bottom-nav button {
+  color: #fff;
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  text-align: center;
+  flex: 1;
+  transition: color 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bottom-nav button:hover {
+  color: #a7ffeb;
+  transform: scale(1.1);
+}
+
+.bottom-nav .icon {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 0px;
+}
+
+.bottom-nav .home-link {
+  font-weight: bold;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #5DB996;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  z-index: 1000;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.popup-content h3 {
+  color: #118B50;
+  margin-bottom: 5px;
+}
+
+.popup-content p {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.popup-content .rakats {
+  margin-top: 10px;
+}
+
+.popup-content .rakats ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.popup-content .rakats li {
+  margin-bottom: 5px;
+}
+
+.popup button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #118B50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.popup button:hover {
+  background-color: #0e6e3e;
+}
+
+/* Overlay to dim the background */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}

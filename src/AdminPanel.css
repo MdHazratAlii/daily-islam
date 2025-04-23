@@ -1,0 +1,48 @@
+.admin-header{
+    display: flex;
+}
+.logout-button button{
+    border-radius: 0px;
+}
+.admin-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+.logout-button{
+    background: red;
+    border-radius: 0px;
+}
+.admin-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #004d40;
+  padding: 10px;
+}
+
+.admin-nav button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-nav button.active {
+  background-color: #00332e;
+  font-weight: bold;
+}
+
+.admin-nav button:hover {
+  background-color: #00564d;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+}

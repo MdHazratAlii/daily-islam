@@ -1,0 +1,51 @@
+.admin-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+}
+.login-form{
+    padding: 20px
+}
+
+.login-form, .2fa-form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.login-form h2, .2fa-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+button {
+  width: 96%;
+  padding: 10px;
+  background-color: #004d40;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00332e;
+}
